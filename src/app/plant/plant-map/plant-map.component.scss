@@ -1,0 +1,235 @@
+agm-map {
+    height: calc(100vh - 65px);
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100vw;
+  }
+
+
+  
+  .plant-title{
+    font-size: 1.45em;
+    margin-top: 1em;
+    margin-bottom: 0.75em;
+  }
+  
+  hr{
+    margin: 0px;
+    margin-bottom: 0.5em;
+  }
+  
+  .green-dot{
+    width: 6px;
+    height: 6px;
+    margin: 10px;
+    border-radius: 50%;
+    background: #03ba4e;
+    box-shadow: 0px 0px 0px 4px #81dda7;
+  }
+  
+  .red-dot{
+    width: 6px;
+    height: 6px;
+    margin: 10px;
+    border-radius: 50%;
+    background: #ba0303;
+    box-shadow: 0px 0px 0px 4px #dd8181;
+  }
+  
+  .product-table{
+    width:100%;
+    transition: 0.25s;
+    .product-row{
+      font-size: 1.05em;
+  
+      .product-yield{
+        text-align: right;
+        font-size: 1.05em;
+        margin-right: 10px;
+        font-weight: bold;
+        &.positive{
+          color:#03ba4e;
+        }
+        &.negative{
+          color: #ba0303;
+        }
+      }
+  
+      .product-title{
+        margin: 6px;
+        margin-right: 20px;
+      }
+    }
+    tr:hover{
+      background: rgba(#81dda7, 0.45);
+      transition: 0.25s;
+      cursor: pointer;
+    }
+  }
+  
+  
+  .zoom-slider-container{
+    position: fixed;
+    background: rgba(230, 230, 230, 0.45);
+    border: 1px solid rgba(202, 202, 202, 0.6);
+    bottom: 5vh;
+    left: 10vw;
+    mat-slider{
+      width: 20vw;
+    }
+  
+    .zoom-button{
+      padding: 4px;
+      background: rgba(255, 255, 255, 0.65);
+      border: 1px solid rgba(202, 202, 202, 0.5);
+      display: inline-flex;
+    }
+  
+    button{
+      &:focus{
+        outline: 0;
+      }
+    }
+  }
+  
+  ::ng-deep .mat-accent .mat-slider-thumb {
+    background-color: rgb(18, 211, 245);
+  }
+  ::ng-deep .mat-accent .mat-slider-thumb-label {
+    background-color: rgb(18, 211, 245);
+  }
+  ::ng-deep .mat-accent .mat-slider-track-fill {
+    background-color: rgb(18, 211, 245);
+  }
+  
+
+  img{
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  .container{
+    min-width: 100%;
+    // background-color: #74FFB9;
+
+  }
+  .logo{
+    z-index: 1;
+    margin-left: 5px;
+  }
+  
+  .example-form{
+    overflow-x: hidden;
+    height: 60px;
+    border:none;
+    margin-top: 3px;
+  
+  
+  }
+  input{
+    width: 450px;
+    border:none;
+    z-index: 1;
+    text-align: center;
+    font-size: 1.2em;
+    height: 60px;
+    border:none;
+  }
+  
+      
+  .map-button{
+    border-radius:1px;
+    margin: 7px;
+    background: #fff;
+    color:black;
+    height: 50px;
+    width: 60px;
+  }
+  .map-button:active{
+    background: #03bb4f;
+    color: #fff;
+  }
+  .map-button:focus{
+    outline:0;
+  }
+  
+      
+  .list-button{
+    border-radius:1px;
+    margin: 7px;
+    background: #fff;
+    color:black;
+    height: 50px;
+    width: 60px;
+  }
+  .list-button:active{
+    background: white;
+    color: black;
+  }
+  .list-button:focus{
+    outline:0;
+  }
+  
+  .active{
+    background: #03bb4f;
+  
+  }
+  
+  
+  ::ng-deep .mat-autocomplete-panel::-webkit-scrollbar{
+    // width: 5px;
+    // size: 10px;
+    background: #7F92AC;
+    border-radius: 30px;
+    width: 10px;
+    size: 40px !important;
+  }
+    #scroller{
+      //height: 200px;
+      overflow-y: scroll;
+    }
+
+    ::ng-deep .mat-autocomplete-panel::-webkit-scrollbar-track {
+     background: #eee;
+    }
+    
+    /* Handle */
+    ::ng-deep .mat-autocomplete-panel::-webkit-scrollbar-thumb {
+     background: #7F92AC;
+     border-radius: 30px;
+     height: 40px;
+     size: 20px;
+    
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+     background: #7F92AC;
+    }
+    
+
+  .button1{
+    background: #03bb4f;
+  }
+  .button2{
+    margin: 10px;
+  }
+
+  .image{
+    margin-left: 10px;
+  }

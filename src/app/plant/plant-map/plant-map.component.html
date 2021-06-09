@@ -1,0 +1,51 @@
+<div class="d-inline-flex justify-content-around container">
+  <h5 class="col-1 logo">
+    <img src="assets/agroGo.png">
+  </h5>
+
+  <form class="example-form mat-elevation-z4">
+    <input matInput [(ngModel)]="searchText" aria-label="State" [matAutocomplete]="auto" [formControl]="stateCtrl"
+      class="input" placeholder="Search the plant">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let state of filteredStates | async" [value]="state.name">
+        <img class="example-option-img" aria-hidden [src]="state.image" height="25">
+        <span>{{state.name}}</span> |
+        <small> <img src="assets/grey-location.png" class="location" alt="">
+          {{state.longitude}}</small>
+
+      </mat-option>
+    </mat-autocomplete>
+
+    <br>
+
+
+  </form>
+
+  <div class="map-list-toggle">
+
+    <mat-button-toggle mat-fab [routerLink]="['../plant-map']" routerLinkActive="active" class="map-button">
+      <mat-icon aria-label="Go to map page">my_location</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle mat-fab [routerLink]="['../plant-list']" routerLinkActive="active" class="list-button">
+      <mat-icon aria-label="Go to list page">drag_indicator</mat-icon>
+    </mat-button-toggle>
+
+  </div>
+</div>
+
+
+
+
+
+<agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="placeMarker($event)">
+  <agm-marker *ngFor="let marker of markers  | filter:searchText" [latitude]="marker.latitude"
+    [longitude]="marker.longitude" [iconUrl]="$any(iconUrl)" data-toogle="tooltip" title="{{marker.name}}">
+    <agm-info-window #window>
+      <p>{{marker.name}}</p>
+      <img src="{{marker.image}}" class="image">
+      <br>
+      <button [routerLink]="['../plant-list']" class="btn   mat-elevation-z4 button1">Info</button>
+      <button [routerLink]="['/graphs']" class="btn   mat-elevation-z4 button2">Graph</button>
+    </agm-info-window>
+  </agm-marker>
+</agm-map>

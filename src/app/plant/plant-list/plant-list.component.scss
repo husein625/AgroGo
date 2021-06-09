@@ -1,0 +1,184 @@
+.example-card {
+    max-width: 300px;
+    max-height: 370px;
+    margin: 7px;
+    border-radius: 10px;
+    overflow-y:hidden;
+  }
+  .image{
+width: 300px;     
+height: 190px; 
+  }
+  .location{
+    width: auto;
+    height: 15px;
+  }
+  mat-card-title{
+    text-align: start;
+    font-size: 1.2em;
+  }
+  mat-progress-bar{
+    border-radius: 50%;
+  }
+  mat-card-subtitle{
+    margin-left: 10px;
+  }
+  .btn{
+    font-size: 0.9em;
+  }
+
+  .description{
+    margin-top: -8px;
+    overflow-y:scroll;
+    height: 50px;
+    font-size: 0.8em;
+    line-height: 1.2em;
+  }
+
+
+
+ 
+  .description::-webkit-scrollbar{
+    background: #7F92AC;
+    border-radius: 30px;
+    width: 8px;
+  }
+  
+    .description::-webkit-scrollbar-track{
+     background: #eee;
+    }
+    
+    /* Handle */
+    .description::-webkit-scrollbar-thumb{
+     background: #7F92AC;
+     border-radius: 30px;
+    
+    }
+    
+    /* Handle on hover */
+    .description::-webkit-scrollbar-thumb:hover{
+     background: #7F92AC;
+    }
+    
+
+
+    .E{
+      margin-top: -10px;
+    }
+
+    
+
+
+    .plants{
+      margin-left:14%;
+      margin-right: 5%;
+      margin-top: 1%;
+    }
+
+    .map-list-toggle{
+      margin-left: 35%;
+    }
+
+  .container{
+    min-width: 100%;
+  }
+  .logo{
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .example-form{
+    overflow-x: hidden;
+    height: 60px;
+    border:none;
+    margin-top: 3px;
+  position: absolute;
+  
+  }
+  input{
+    width: 450px;
+    border:none;
+    z-index: 1;
+    text-align: center;
+    font-size: 1.2em;
+    height: 60px;
+    border:none;
+  }
+  
+      
+  .map-button{
+    border-radius:1px;
+    margin: 7px;
+    background: #fff;
+    color:black;
+    height: 50px;
+    width: 60px;
+  }
+  .map-button:active{
+    background: #03bb4f;
+    color: #fff;
+  }
+  .map-button:focus{
+    outline:0;
+  }
+  
+      
+  .list-button{
+    border-radius:1px;
+    margin: 7px;
+    background: #fff;
+    color:black;
+    height: 50px;
+    width: 60px;
+  }
+  .list-button:active{
+    background: white;
+    color: black;
+  }
+  .list-button:focus{
+    outline:0;
+  }
+  
+  .active{
+    background: #03bb4f;
+  
+  }
+  
+  .button1{
+    margin-top: 10px;
+    background: #03bb4f;
+    color: white;
+
+  }
+
+  .button2{
+    margin-top: 10px;
+
+  }
+
+
+
+  ::ng-deep::-webkit-scrollbar{
+    background: #7F92AC;
+    border-radius: 30px;
+    width: 12px;
+  }
+  
+    ::ng-deep::-webkit-scrollbar-track{
+     background: #eee;
+    }
+    
+    /* Handle */
+    ::ng-deep::-webkit-scrollbar-thumb{
+     background: #7F92AC;
+     border-radius: 30px;
+
+    
+    }
+    
+    /* Handle on hover */
+    ng-deep::-webkit-scrollbar-thumb:hover{
+     background: #7F92AC;
+    }
+    

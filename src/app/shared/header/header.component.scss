@@ -1,0 +1,66 @@
+.container{
+  min-width: 100%;
+}
+.logo{
+  z-index: 1;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.example-form{
+  overflow-x: hidden;
+  height: 60px;
+  border:none;
+  margin-top: 3px;
+
+
+}
+input{
+  width: 450px;
+  border:none;
+  z-index: 1;
+  text-align: center;
+  font-size: 1.2em;
+  height: 60px;
+  border:none;
+}
+
+    
+.map-button{
+  border-radius:10px;
+  margin: 7px;
+  background: #fff;
+  color:black;
+  height: 50px;
+  width: 60px;
+}
+.map-button:active{
+  background: #03bb4f;
+  color: #fff;
+}
+.map-button:focus{
+  outline:0;
+}
+
+    
+.list-button{
+  border-radius:10px;
+  margin: 7px;
+  background: #fff;
+  color:black;
+  height: 50px;
+  width: 60px;
+}
+.list-button:active{
+  background: white;
+  color: black;
+}
+.list-button:focus{
+  outline:0;
+}
+
+.active{
+  background: #03bb4f;
+
+}
+

@@ -1,0 +1,39 @@
+<div class="d-inline-flex justify-content-around container">
+  <h5 class="col-1 logo">
+    <img src="assets/planet-earth.png" width="40" height="40" alt="" class="">
+    AgroGo
+  </h5>
+  
+  <form class="example-form mat-elevation-z4">
+
+      <input matInput
+             aria-label="State"
+             [matAutocomplete]="auto"
+             [formControl]="stateCtrl"
+             class="input"
+             placeholder="Search the plant">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let state of filteredStates | async" [value]="state.name">
+          <img class="example-option-img" aria-hidden [src]="state.flag" height="25">
+          <span>{{state.name}}</span> |
+          <small>Population: {{state.population}}</small>
+          
+        </mat-option>
+      </mat-autocomplete>
+  
+    <br>
+  
+  
+  </form>
+
+  <div class="map-list-toggle">
+
+    <mat-button-toggle mat-fab   [routerLink]="['plant-map']" routerLinkActive="active" class="map-button">
+        <mat-icon aria-label="Go to map page">my_location</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle mat-fab  [routerLink]="['plant-list']"  routerLinkActive="active" class="list-button">
+        <mat-icon aria-label="Go to list page">drag_indicator</mat-icon>
+    </mat-button-toggle>
+
+</div>
+</div>
