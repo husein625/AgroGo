@@ -1,0 +1,51 @@
+
+
+::ng-deep.mat-dialog-container {
+    width: 20vw;
+    height: max-content;
+    //padding-top: 30px;
+    border-radius: 10px;
+    
+      }
+        
+      h1{  
+        text-align: center;
+         color: #00275A;
+          font-size: 1.2em;
+          font-weight: bold;
+        }
+        p{
+          text-align: center;
+          color: #00275A;
+          font-size: 0.9em;
+          font-weight: normal;
+          margin-top: -5%;
+
+        }
+        mat-dialog-actions{
+          margin-top: 30px;
+        }
+    
+        #button1{
+            background-color: transparent;
+            color: #026EF9;
+            float: right;       
+        }
+        .button{
+            float: right;
+            width: 8rem;
+            border-radius: 40px;
+            font-size: 0.8em;
+            font-weight: bold;
+            height: 2.5rem;
+    }
+    
+    @media screen and (max-width: 600px) {
+      ::ng-deep.mat-dialog-container {
+        width: 50vw;
+    
+    
+      }
+    }
+    
+    
